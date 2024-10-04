@@ -1,0 +1,165 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    margin-top: 20px;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Adjust height as needed */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Slider Navigation Button Styles */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Set a z-index to ensure buttons are above the slides */
+}
+
+.prev {
+    left: 10px; /* Position the previous button on the left */
+}
+
+.next {
+    right: 10px; /* Position the next button on the right */
+}
+
+/* Product Section Styles */
+.products {
+    padding: 40px 0;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows products to wrap on smaller screens */
+}
+
+.product-card {
+    flex: 1 1 30%; /* Allow 3 cards per row */
+    margin: 10px;
+    background: #f9f9f9; /* Light background for product cards */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures images stay within rounded corners */
+}
+
+.product-card img {
+    width: 100%; /* Make image take the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-card h3 {
+    margin: 10px;
+}
+
+/* Features Section Styles */
+.features {
+    background-color: #f1f1f1; /* Light background for features section */
+    padding: 40px 0;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    flex: 1 1 30%; /* Allow 3 features per row */
+    margin: 10px;
+    text-align: center; /* Center align text */
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 40px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, 
+.contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
